@@ -1,0 +1,1027 @@
+<html>
+
+<head>
+    <title>Green mart</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        @media (min-width:1024px) {
+            .first_header {
+                display: block !important;
+            }
+
+            .first_header_mobile {
+                display: none !important;
+            }
+        }
+
+        @media (max-width:994px) {
+            .first_header {
+                display: none !important;
+            }
+
+            .first_header_mobile {
+                display: block !important;
+            }
+
+            .second_header {
+                display: none !important;
+            }
+        }
+
+        .first_header {
+            height: 30px;
+            padding: 5px;
+            background-color: #f4f6f8;
+            font-size: 13px;
+            text-align: right;
+        }
+
+        .second_header {
+            height: 130px;
+            padding-top: 25px;
+        }
+
+        .call_contain {
+            height: 50px;
+        }
+
+        .first_header_row {
+            height: 62px;
+        }
+
+        .first_header_mobile {
+            height: 100px;
+            padding: 20px;
+        }
+
+        .second_header_row {
+            height: 62px;
+        }
+
+        .header_menu {
+            margin-top: 3px;
+            margin-bottom: 0;
+        }
+
+        .header_menu li {
+            display: inline;
+            font-size: 18px;
+            padding-right: 45px;
+            padding-left: 45px;
+            border-right: 1px solid rgb(207, 201, 201);
+        }
+
+        .header_menu {
+            padding: 0;
+        }
+
+        .header_menu ul {
+            padding: 0;
+        }
+
+        .first_slider {
+            height: 320px;
+            background-image: url(img/background-slider-01.jpg);
+        }
+
+        .hading_text {
+            text-align: right;
+            color: white;
+        }
+
+        .facility_container {
+            height: 150px;
+            padding-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .facility_text {
+            text-align: center;
+            margin-bottom: 10px;
+            border-right: 1px solid #E5E8EB;
+        }
+
+        #nav {
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0px;
+            top: 0px;
+            width: 94%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        #nav ul li {
+            list-style: none;
+            margin: 50px 20px;
+            color: black;
+            border-bottom: 1px solid #9d9d9d;
+        }
+
+        #menubtn {
+            width: 50px;
+            position: fixed;
+            top: 24px;
+            left: 112px;
+            font-size: 45px;
+        }
+
+        #nav ul {
+            background: white;
+            text-align: left;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            width: 60%;
+        }
+
+        .off_containe {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .card {
+            border: none;
+        }
+
+        .offbtn {
+            width: 90%;
+            height: 50px;
+            background-color: #00AB55;
+            color: white;
+            font-size: 17px;
+            padding: 6px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .fruder_containe {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .food_txt {
+            padding-top: 100px;
+            font-size: 15px;
+        }
+
+        .food_back2 {
+            background-image: url(img/bg-home1-01.jpg);
+            height: 700px;
+        }
+
+        .support_container {
+            height: 150px;
+            background-color: #F4F6F8;
+            padding-top: 22px;
+            padding-bottom: 15px;
+        }
+
+        .support_item {
+            background-color: #ffff;
+            padding: 20px;
+            height: 80px;
+        }
+
+        .footer_section {
+            background-color: white;
+            height: 400px;
+            color: black;
+        }
+
+        .footer_header {
+            margin-bottom: 31px;
+            padding: 0;
+        }
+
+        .footer_col ul li {
+            list-style: none;
+            font-weight: 400;
+            padding-bottom: 15px;
+            color: #212B36;
+
+        }
+
+        .footer_col {
+            padding-left: 34px;
+            margin-right: 30px;
+        }
+
+        .footer_col ul {
+            padding: 0;
+        }
+
+        .footer_row {
+            padding-top: 80px;
+            font-size: 16px;
+        }
+
+        .last_row {
+            padding-top: 35px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid first_header">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-2">Welcome to GreenMart</div>
+                <div class="col-md-2">
+                    <img src="img/en.png" style="width: 12%;"> English
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-4">Order Tracking
+                        </div>
+                        <div class="col-md-3">My Wishlist</div>
+                        <div class="col-md-5">Recent Viewed Products</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid  first_header_mobile">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3">
+                    <div id="nav">
+                        <ul>
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Serbice</li>
+                            <li>contact us</li>
+                        </ul>
+                        <i class="fa fa-bars" aria-hidden="true" id="menubtn"></i>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="logo_mb">
+                        <img src="img/logo.svg" style="width: 100%;">
+                    </div>
+                </div>
+
+                <div class="col-xs-5" style="height: 54px;text-align: right;padding-left: 50px;">
+                    <i class="fa fa-heart-o icon_s" style="font-size: 50px;padding-left: 15px;"></i>
+                    <i class="fa fa-search" style="font-size: 50px;padding-left: 15px;"></i>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid  second_header">
+        <div class="container">
+            <div class="row first_header_row">
+                <div class="col-md-2"><img src="img/logo.svg"></div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="search" style="background-color:#919EAB52;;
+                            border: 1px solid rgb(185 179 179);
+                            border-radius: 7px;">
+                                <div class="row">
+                                    <div class="col-md-10">
+                                        <input type="text" placeholder="Serach for..." style="    width: 85%;
+                                    height: 40px;
+                                    padding: 10px;
+                                    font-size: 16px;
+                                    border: none;
+                                    background: transparent;
+                                    ">
+                                    </div>
+                                    <div class="col-md-2" style="padding-left: 0;">
+                                        <i class="fa fa-search" style="padding-bottom: 11px;
+                                        padding-top: 14px;font-size: 20px;
+                                        padding-left: 10px;
+                                        border-left: 1px solid  rgb(185 179 179);"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-6" style="padding-left: 50px;">
+                            <div class="row">
+                                <div class="col-md-1" style="padding: 0;"><img src="img/call_logo.png" height="35px">
+                                </div>
+                                <div class="col-md-11" style="font-size: 12px;padding-left: 21px;">
+                                    <b>
+                                        Online Shopping</b>
+                                    <p style="margin-bottom: 0;color: #637381;">+ 78 925-942-2900</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" style="padding-left: 50px;">
+                            <div class="row">
+                                <div class="col-md-1" style="padding: 0;"><img src="img/contact_logo.png" height="35px">
+                                </div>
+                                <div class="col-md-11" style="font-size: 13px;padding-left: 23px;">
+                                    <b>
+                                        Account
+                                    </b>
+                                    <p style="margin-bottom: 0;color: #637381;"> Login/Register</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <button
+                        style="background-color: rgb(65, 182, 65);border: none;border-radius: 5px;padding: 0;width: 62%;">
+                        <div class="row" style="padding: 2px;">
+                            <div class="col-md-2" style="padding-left: 10px;
+                            padding-right: 0px;"><img src="img/shoping_logo.png" style="height: 46px;"></div>
+                            <div class="col-md-10"
+                                style="font-size: 15px;color: white;padding-right: 0;padding-left: 12px;">
+                                <b>
+                                    Cart
+                                </b>
+                                <p style="margin-bottom: 0;"> $0.00</p>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="row second_header_row">
+                <div class="col-md-12">
+                    <ul class="header_menu">
+                        <li style="border-left: 1px solid rgba(226, 223, 223, 0.568);color: rgb(65, 182, 65);">Home <i
+                                class="fa fa-angle-down" aria-hidden="true"></i></li>
+                        <li>Shope <i class="fa fa-angle-down" aria-hidden="true"></i></li>
+                        <li>Pages <i class="fa fa-angle-down" aria-hidden="true"></i></li>
+                        <li>Vegetables <i class="fa fa-angle-down" aria-hidden="true"></i></li>
+                        <li>Blog <i class="fa fa-angle-down" aria-hidden="true"></i></li>
+                        <li style="border-right: 1px solid rgba(226, 223, 223, 0.568);">Flash Sales <i
+                                class="fa fa-angle-down" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid first_slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="hading_text" style="padding-top: 50px;">
+                        <h2 style="font-size: 40px;margin-bottom: 2px;">Farm Fresh Meat & <br>Poultry 100% Organic.
+                        </h2>
+                        <br>
+                        <p style="font-size: 20px;margin-bottom: 5px;">Always fresh organic products.</p>
+                        <br>
+                        <button
+                            style="padding: 10px;color: black;width: 10%;background-color: orange;border: none;border-radius: 5px;">Shop
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header_text"
+                        style="text-align: center;background-color: #f4f6f8;height: 50px;padding-top: 8px;margin-top: 20px;">
+                        <h4>Free Shipping On All Orders Over $99. <span
+                                style="color: rgb(9, 177, 9);">#staysafecovid19</span></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row facility_container">
+                <div class="col-md-3 facility_text col-xs-6">
+                    <div><img src="img/star_logo.png"></div>
+                    <div>
+                        <b style="font-size: 20px;">Top Rank Farms</b>
+                        <br>
+                        <p style="color: #637381;margin-bottom: 0;">Ut facilisis luctus elit id ornare. <br>Aenean non
+                            sem risus.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 facility_text col-xs-6">
+                    <div><img src="img/blue_logo.png"></div>
+                    <div>
+                        <b style="font-size: 20px;">Organic Certificated</b>
+                        <br>
+                        <p style="color: #637381;">Etiam tempus nulla et dolor sagitti <br>eu ultricies.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 facility_text col-xs-6">
+                    <div><img src="img/logo_sokat.png"></div>
+                    <div>
+                        <b style="font-size: 20px;">Fast Delivery</b>
+                        <br>
+                        <p style="color: #637381;">Ut facilisis luctus elit id ornare. <br>Aenean non sem risus.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 facility_text col-xs-6" style="border: none;">
+                    <div><img src="img/right_logo.png" style="padding-top: 5px;
+                        padding-bottom: 10px;"></div>
+                    <div>
+                        <b style="font-size: 20px;">Trusted Products</b>
+                        <br>
+                        <p style="color: #637381;">Etiam tempus nulla et dolo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid off_containe">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-3">
+                    <img src="img/off1.png" alt="">
+                </div>
+                <div class="col-md-3">
+                    <img src="img/off2.png" alt="">
+                </div>
+                <div class="col-md-3">
+                    <img src="img/off3.png" alt="">
+                </div>
+                <div class="col-md-3">
+                    <img src="img/off4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-10">
+                    <h1>Daily Chilled Vegetables</h1>
+                </div>
+                <div class="col-md-2">
+                    <p style="color: #73AB55;padding-top: 10px;font-size: 15px;">Shop all</p>
+                </div>
+            </div>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner row w-100 mx-auto">
+                    <div class="carousel-item col-md-3 active">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="img/item1.jpg  " alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title" style="color: #505861;">Zesco Ripe Bananas <br
+                                        style="color: #85929D;">350g</h4>
+                                <img src="img/start3.png" style="padding-top: 8px; padding-bottom: 8px;">
+                                <h4 class="card-text" style="color: red;padding-bottom: 15px;">$120.00</h4>
+                                <button class="offbtn"><img src="img/shoping_logo.png">Add to
+                                    car</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="img/item2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title" style="color: #505861;">Zesco Ripe Bananas <br
+                                        style="color: #85929D;">350g</h4>
+                                <img src="img/star1.png" style="padding-top: 8px; padding-bottom: 8px;">
+                                <h4 class="card-text" style="color: red;padding-bottom: 15px;">$120.00</h4>
+                                <button class="offbtn"><img src="img/shoping_logo.png">Add to
+                                    car</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="img/item3.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title" style="color: #505861;">Zesco Ripe Bananas <br
+                                        style="color: #85929D;">350g</h4>
+                                <img src="img/star0.png" style="padding-top: 8px; padding-bottom: 8px;">
+                                <h4 class="card-text" style="color: red;padding-bottom: 15px;">$120.00</h4>
+                                <button class="offbtn"><img src="img/shoping_logo.png">Add to
+                                    car</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="img/item4.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title" style="color: #505861;">Zesco Ripe Bananas <br
+                                        style="color: #85929D;">350g</h4>
+                                <img src="img/star2.png" style="padding-top: 8px; padding-bottom: 8px;">
+                                <h4 class="card-text" style="color: red;padding-bottom: 15px;">$120.00</h4>
+                                <button class="offbtn"><img src="img/shoping_logo.png">Add to
+                                    car</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="img/itrm5.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title" style="color: #505861;">Zesco Ripe Bananas <br
+                                        style="color: #85929D;">350g</h4>
+                                <img src="img/start3.png" style="padding-top: 8px; padding-bottom: 8px;">
+                                <h4 class="card-text" style="color: red;padding-bottom: 15px;">$120.00</h4>
+                                <button class="offbtn"><img src="img/shoping_logo.png">Add to
+                                    car</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="img/item6.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title" style="color: #505861;">Zesco Ripe Bananas <br
+                                        style="color: #85929D;">350g</h4>
+                                <img src="img/star0.png" style="padding-top: 8px; padding-bottom: 8px;">
+                                <h4 class="card-text" style="color: red;padding-bottom: 15px;">$120.00</h4>
+                                <button class="offbtn"><img src="img/shoping_logo.png">Add to
+                                    car</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="img/itrm8.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title" style="color: #505861;">Zesco Ripe Bananas <br
+                                        style="color: #85929D;">350g</h4>
+                                <img src="img/start3.png" style="padding-top: 8px; padding-bottom: 8px;">
+                                <h4 class="card-text" style="color: red;padding-bottom: 15px;">$120.00</h4>
+                                <button class="offbtn"><img src="img/shoping_logo.png">Add to
+                                    car</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid fruder_containe">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/frute imge.jpg" alt="">
+                </div>
+                <div class="col-md-6">
+                    <div class="food_txt">
+                        <h1 style="font-size: 32px;">Organic Vegetables Everyday</h1>
+                        <h4 style="font-size: 18px;color: #00AB55;margin-top: 15px;margin-bottom: 15px;">Your online
+                            resource of healthy recipes.</h4>
+                        <p style="color: #4C423C;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Nullam
+                            vulputate ultrices
+                            libero ut
+                            vehicula. In sit amet <br> arcu libero. Proin fringilla dui sed arcu fringilla tristique
+                            <br>
+                            eget
+                            ultricies elit
+                        </p>
+                        <button
+                            style="width: 22%;height: 40px;background-color: #FFB240;border: none;border-radius: 5px;">
+                            <b>Shop
+                                Now</b></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid food_back2 ">
+        <div class="container">
+            <div class="row" style="margin-top: 40px;">
+                <div class="col-md-10">
+                    <h1>Featured Fresh Fruits</h1>
+                </div>
+                <div class="col-md-2">
+                    <p style="color: #73AB55;padding-top: 10px;font-size: 15px;">Shop all</p>
+                </div>
+            </div>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner row w-100 mx-auto">
+                    <div class="carousel-item col-md-3 active">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="img/item1.jpg  " alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title" style="color: #505861;">Zesco Ripe Bananas <br>350g</h4>
+                                <img src="img/start3.png">
+                                <h4 class="card-text" style="color: red;">$120.00</h4>
+                                <button class="offbtn"><img src="img/shoping_logo.png">Add to
+                                    car</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="img/item2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title" style="color: #505861;">Zesco Ripe Bananas <br>350g</h4>
+                                <img src="img/start3.png">
+                                <h4 class="card-text" style="color: red;">$120.00</h4>
+                                <button class="offbtn"><img src="img/shoping_logo.png">Add to
+                                    car</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="img/item3.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title" style="color: #505861;">Zesco Ripe Bananas <br>350g</h4>
+                                <img src="img/start3.png">
+                                <h4 class="card-text" style="color: red;">$120.00</h4>
+                                <button class="offbtn"><img src="img/shoping_logo.png">Add to
+                                    car</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="img/item4.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title" style="color: #505861;">Zesco Ripe Bananas <br>350g</h4>
+                                <img src="img/start3.png">
+                                <h4 class="card-text" style="color: red;">$120.00</h4>
+                                <button class="offbtn"><img src="img/shoping_logo.png">Add to
+                                    car</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="img/itrm5.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title" style="color: #505861;">Zesco Ripe Bananas <br>350g</h4>
+                                <img src="img/start3.png">
+                                <h4 class="card-text" style="color: red;">$120.00</h4>
+                                <button class="offbtn"><img src="img/shoping_logo.png">Add to
+                                    car</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="img/item6.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title" style="color: #505861;">Zesco Ripe Bananas <br>350g</h4>
+                                <img src="img/start3.png">
+                                <h4 class="card-text" style="color: red;">$120.00</h4>
+                                <button class="offbtn"><img src="img/shoping_logo.png">Add to
+                                    car</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="img/itrm8.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title" style="color: #505861;">Zesco Ripe Bananas <br>350g</h4>
+                                <img src="img/start3.png">
+                                <h4 class="card-text" style="color: red;">$120.00</h4>
+                                <button class="offbtn"><img src="img/shoping_logo.png">Add to
+                                    car</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="row" style="margin-top: 40px;">
+                <div class="col-md-6">
+                    <img src="img/banner-06.jpg" style="width: 98%;">
+                </div>
+                <div class="col-md-6">
+                    <img src="img/banner-07.jpg" style="width: 98%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <h1>Shop By Category</h1>
+                </div>
+                <div class="col-md-2">
+                    <p style="color: #73AB55;padding-top: 10px;font-size: 17px;">Shop all categories</p>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 30px;margin-bottom: 30px;">
+                <div class="col-md-2" style="border: 1px solid #E5E8EB;">
+                    <img src="img/cat-01.jpg" alt="">
+                    <div class="cat_txt" style="text-align: center;">
+                        <h3>Fruit</h3>
+                    </div>
+                </div>
+                <div class="col-md-2" style="border: 1px solid #E5E8EB;">
+                    <img src="img/cat-02.jpg" alt="">
+                    <div class="cat_txt" style="text-align: center;">
+                        <h3>Vegetables</h3>
+                    </div>
+                </div>
+                <div class="col-md-2" style="border: 1px solid #E5E8EB;">
+                    <img src="img/cat-03.jpg" alt="">
+                    <div class="cat_txt" style="text-align: center;">
+                        <h3>Meat & Poultry</h3>
+                    </div>
+                </div>
+                <div class="col-md-2" style="border: 1px solid #E5E8EB;">
+                    <img src="img/cat-04.jpg" alt="">
+                    <div class="cat_txt" style="text-align: center;">
+                        <h3>Fish & Seafood</h3>
+                    </div>
+                </div>
+                <div class="col-md-2" style="border: 1px solid #E5E8EB;">
+                    <img src="img/cat-05.jpg" alt="">
+                    <div class="cat_txt" style="text-align: center;">
+                        <h3>Dairy & Eggs</h3>
+                    </div>
+                </div>
+                <div class="col-md-2" style="border: 1px solid #E5E8EB;">
+                    <img src="img/cat-06.jpg" alt="">
+                    <div class="cat_txt" style="text-align: center;">
+                        <h3>Milk & Drinks</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <h1>Recommended For You</h1>
+                </div>
+                <div class="col-md-2">
+                    <p style="color: #73AB55;padding-top: 10px;font-size: 17px;">Shop all</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="img/banner-product.jpg" style="width: 100%;height: 440px;">
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="img/item1.jpg  " alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title" style="color: #505861;">Zesco Ripe Bananas <br>350g</h4>
+                            <img src="img/start3.png">
+                            <h4 class="card-text" style="color: red;">$120.00</h4>
+                            <button class="offbtn"><img src="img/shoping_logo.png">Add to
+                                car</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="img/item2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title" style="color: #505861;">Zesco Ripe Bananas <br>350g</h4>
+                            <img src="img/start3.png">
+                            <h4 class="card-text" style="color: red;">$120.00</h4>
+                            <button class="offbtn"><img src="img/shoping_logo.png">Add to
+                                car</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="img/item3.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title" style="color: #505861;">Zesco Ripe Bananas <br>350g</h4>
+                            <img src="img/start3.png">
+                            <h4 class="card-text" style="color: red;">$120.00</h4>
+                            <button class="offbtn"><img src="img/shoping_logo.png">Add to
+                                car</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" style="margin-top: 30px">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="img/itrm5.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title" style="color: #505861;">Zesco Ripe Bananas <br>350g</h4>
+                        <img src="img/start3.png">
+                        <h4 class="card-text" style="color: red;">$120.00</h4>
+                        <button class="offbtn"><img src="img/shoping_logo.png">Add to
+                            car</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="img/item6.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title" style="color: #505861;">Zesco Ripe Bananas <br>350g</h4>
+                        <img src="img/start3.png">
+                        <h4 class="card-text" style="color: red;">$120.00</h4>
+                        <button class="offbtn"><img src="img/shoping_logo.png">Add to
+                            car</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="img/item2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title" style="color: #505861;">Zesco Ripe Bananas <br>350g</h4>
+                        <img src="img/start3.png">
+                        <h4 class="card-text" style="color: red;">$120.00</h4>
+                        <button class="offbtn"><img src="img/shoping_logo.png">Add to
+                            car</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="img/itrm8.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title" style="color: #505861;">Zesco Ripe Bananas <br>350g</h4>
+                        <img src="img/start3.png">
+                        <h4 class="card-text" style="color: red;">$120.00</h4>
+                        <button class="offbtn"><img src="img/shoping_logo.png">Add to
+                            car</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="img/itrm8.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title" style="color: #505861;">Zesco Ripe Bananas <br>350g</h4>
+                        <img src="img/start3.png">
+                        <h4 class="card-text" style="color: red;">$120.00</h4>
+                        <button class="offbtn"><img src="img/shoping_logo.png">Add to
+                            car</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid support_container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p style="font-size: 15px;color: #7F7994;">
+                        <b>GreenMart</b> makes online grocery delivery and grocery shopping fast and easy. Get
+                        groceries delivered and order the best of seasonal farm fresh food, great local finds, quick
+                        meal solutions, incredible new products and exclusives, and all of your favorite grocery brands.
+                        It’s supermarket delivery with so much more: from Fresh Deals that help you save big to
+                        convenient delivery windows that work around your schedule, we’ve thought of everything to make
+                        grocery home delivery simple for you. We’re a grocery delivery service you can trust as we
+                        source only the highest-quality products and deliver them directly to your door.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid support_container">
+        <div class="container">
+            <div class="row" style="padding-top: 30px;">
+                <div class="col-md-4">
+                    <div class="col-md-11 support_item">
+                        <div class="col-md-2">
+                            <img src="img/home_icon.png">
+                        </div>
+                        <div class="col-md-10" style="padding-left: 34px;">
+                            <b style="font-size: 15px;">Home Online Shopping</b>
+                            <h2 style="padding-top: 8PX;">+78 925-942-2900</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="col-md-11 support_item">
+                        <div class="col-md-2">
+                            <img src="img/whats_icon.png">
+                        </div>
+                        <div class="col-md-10" style="padding-left: 34px;">
+                            <b style="font-size: 15px;">Support Center</b>
+                            <h2 style="padding-top: 8PX;">+78 925-942-2900</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="col-md-11 support_item" style="margin-bottom: 20px;">
+                        <div class="col-md-2">
+                            <img src="img/home_icon2.png">
+                        </div>
+                        <div class="col-md-10" style="padding-left: 34px;">
+                            <b style="font-size: 15px;">Store Locations</b>
+                            <h2 style="padding-top: 8PX;">View all 5 stores</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer_section">
+        <div class="container">
+            <div class="row footer_row">
+                <div class="col-md-4 col-xs-12" style="padding-left: 0;">
+                    <img src="img/logo.svg">
+                    <p style="padding-top: 20px;">Lorem ipsum dolor sit amet, con sectetur <br> adipiscing elit. Quisque
+                        id
+                        luctus mauris, eget <br> varius libero. Vestibulum metus leo.</p>
+                    <h4 style="color: #42AF5A;padding-top: 10px;padding-bottom: 10px;"><img
+                            src="img/email_logo.png">contact@example.com</h4>
+                    <h4 style="padding-top: 10px;padding-bottom: 10px;"><img src="img/call_logo2.png">+884 123 456 789
+                    </h4>
+                    <h4 style="padding-top: 10px;padding-bottom: 10px;"><img src="img/home_icon2.png">
+                        70 West Buckingham Ave, NY 11735</h4>
+                    <img src="img/social_logo.png" alt=""
+                        style="padding-top: 10px;padding-bottom: 10px;padding-left: 5px;">
+                </div>
+                <div class="col-md-2 footer_col col-xs-12">
+                    <h4 class="footer_header">ABOUT</h4>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                        <li>Help Center</li>
+                        <li>Contact Us</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 footer_col col-xs-12">
+                    <h4 class="footer_header">HELP & GUIDE</h4>
+                    <ul>
+                        <li>Term of Use</li>
+                        <li>Privacy Policy</li>
+                        <li>Shipping & Delivery</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer_col col-xs-12" style="padding-left: 15px;">
+                    <h4 class="footer_header">NEWSLETTER</h4>
+                    <ul>
+                        <li>Don’t miss out <B>thousands of great deals</B> & promotions</li>
+                        <li><input type="text" placeholder="Email address..."
+                                style="border: 1px solid #D5DADF;background-color: #F4F6F8;border-radius: 8px;width: 100%;padding: 10px;">
+                        </li>
+                        <li><button style="color: white;background-color: #00AB55;border-radius: 8px;border:none;width: 50%;
+                                padding: 8px;
+                                font-weight: 600;">Subscribe</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row last_row">
+                <div class="col-md-4 col-xs-12">
+                    <p style="color: #637381;font-size: 18px;">© 2024 <b>Greenmart</b>. All rights reserved.</p>
+                </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-5 col-xs-12">
+                    <div class="row">
+                        <img src="img/payment.png" style="padding-left: 200px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- partial -->
+    <script src='https://code.jquery.com/jquery-1.12.4.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+    <script src="./script.js"></script>
+
+
+    <script>
+        var menubtn = document.getElementById("menubtn")
+        var nav = document.getElementById("nav")
+
+        nav.style.left = "-820px";
+        menubtn.onclick = function () {
+            if (nav.style.left == "-820px") {
+                nav.style.left = "0"; ddw
+            }
+            else {
+                nav.style.left = "-820px"
+            }
+        }
+    </script>
+</body>
+
+</html>
